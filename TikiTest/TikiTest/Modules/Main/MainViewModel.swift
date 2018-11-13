@@ -10,10 +10,11 @@ import Foundation
 import RxSwift
 import RealmSwift
 
-final class MainViewModel: NSObject {
+final class MainViewModel {
     
     let mainService : MainAPIsService
     
+    let shouldShowProgress = PublishSubject<Bool>()
     var productsFilter : Variable<[Product]> = Variable<[Product]>([])
     var firstProducts: [Product] = []
     
@@ -32,14 +33,14 @@ final class MainViewModel: NSObject {
     
     init(mainService: MainAPIsService){
         self.mainService = mainService
-        super.init()
         self.setupRealm()
     }
     
     func getProducts() {
+        shouldShowProgress.onNext(true)
         mainService.getProducts().done { [weak self] response in
             guard let this = self else { return }
-
+            this.shouldShowProgress.onNext(false)
             let products = response.keywords.enumerated().map({ (index, product) -> Product in
                 let product = Product(keyword: product.keyword, icon: product.icon, hexStringColor: this.listHexStringBackgroundColors[index % this.listHexStringBackgroundColors.count])
                 return product
@@ -47,6 +48,7 @@ final class MainViewModel: NSObject {
             this.firstProducts = products
             this.productsFilter.value = products
             }.catch { (error) in
+                self.shouldShowProgress.onNext(false)
                 print("getProducts error: \(error)")
         }
     }

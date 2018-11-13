@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class MainViewController: BaseViewController {
+class MainViewController: BaseViewController, HUDManager {
     
     //MARK: Properties
     let viewModel: MainViewModel
@@ -88,6 +88,18 @@ class MainViewController: BaseViewController {
     }
     
     override func bind() {
+        viewModel.shouldShowProgress
+            .asObservable()
+            .subscribe(onNext: { [weak self] (shouldShowProgress) in
+                guard let this = self else { return }
+                if(shouldShowProgress) {
+                    this.showResponseWaiting()
+                }else {
+                    this.hideResponseWaiting()
+                }
+            })
+            .disposed(by: rx.disposeBag)
+        
         viewModel.productsFilter.asObservable().skip(1).subscribe( onNext : { [weak self] newsList in
             guard let this = self else { return }
             this.viewModel.productsFilter.value.forEach {
