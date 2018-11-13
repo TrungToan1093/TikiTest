@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34358CE6EA99640559A5548C /* Pods_TikiTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196D22E06F23EDB725CFC992 /* Pods_TikiTestTests.framework */; };
+		476EED16EC0EC4ECF080F1F9 /* Pods_TikiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16DA25B5E15A0E734AF950E /* Pods_TikiTest.framework */; };
 		7AA9CCB8219A6F1700A020FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CCB7219A6F1700A020FB /* AppDelegate.swift */; };
 		7AA9CCBA219A6F1700A020FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CCB9219A6F1700A020FB /* ViewController.swift */; };
 		7AA9CCBD219A6F1700A020FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CCBB219A6F1700A020FB /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		7AA9CCC2219A6F1800A020FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CCC0219A6F1800A020FB /* LaunchScreen.storyboard */; };
 		7AA9CCCD219A6F1800A020FB /* TikiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CCCC219A6F1800A020FB /* TikiTestTests.swift */; };
 		7AA9CCD8219A6F1800A020FB /* TikiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CCD7219A6F1800A020FB /* TikiTestUITests.swift */; };
+		ADC1250CDF03BB8B9D0F2151 /* Pods_TikiTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7DA6C7F336E1FF14F2E3DBF /* Pods_TikiTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		196D22E06F23EDB725CFC992 /* Pods_TikiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E50FD37251988921447C8A /* Pods-TikiTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTestTests/Pods-TikiTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A06E456835C85B558CDDB41 /* Pods-TikiTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTestTests/Pods-TikiTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA9CCB4219A6F1700A020FB /* TikiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA9CCB7219A6F1700A020FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AA9CCB9219A6F1700A020FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		7AA9CCD3219A6F1800A020FB /* TikiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA9CCD7219A6F1800A020FB /* TikiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikiTestUITests.swift; sourceTree = "<group>"; };
 		7AA9CCD9219A6F1800A020FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834D638BF0DE08928DE53572 /* Pods-TikiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTest/Pods-TikiTest.release.xcconfig"; sourceTree = "<group>"; };
+		98B808D097B9485AA3F354EA /* Pods-TikiTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTestUITests/Pods-TikiTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B561E56FE9078478D9073094 /* Pods-TikiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTest/Pods-TikiTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C16DA25B5E15A0E734AF950E /* Pods_TikiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EBD513B287CFD1E748F951 /* Pods-TikiTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTestUITests/Pods-TikiTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7DA6C7F336E1FF14F2E3DBF /* Pods_TikiTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476EED16EC0EC4ECF080F1F9 /* Pods_TikiTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34358CE6EA99640559A5548C /* Pods_TikiTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC1250CDF03BB8B9D0F2151 /* Pods_TikiTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA466675066E3057FE6C6CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B561E56FE9078478D9073094 /* Pods-TikiTest.debug.xcconfig */,
+				834D638BF0DE08928DE53572 /* Pods-TikiTest.release.xcconfig */,
+				7A06E456835C85B558CDDB41 /* Pods-TikiTestTests.debug.xcconfig */,
+				52E50FD37251988921447C8A /* Pods-TikiTestTests.release.xcconfig */,
+				D0EBD513B287CFD1E748F951 /* Pods-TikiTestUITests.debug.xcconfig */,
+				98B808D097B9485AA3F354EA /* Pods-TikiTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7AA9CCAB219A6F1700A020FB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				7AA9CCCB219A6F1800A020FB /* TikiTestTests */,
 				7AA9CCD6219A6F1800A020FB /* TikiTestUITests */,
 				7AA9CCB5219A6F1700A020FB /* Products */,
+				2AA466675066E3057FE6C6CE /* Pods */,
+				A6CC1B2E6733766F7C47EC63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = TikiTestUITests;
 			sourceTree = "<group>";
 		};
+		A6CC1B2E6733766F7C47EC63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C16DA25B5E15A0E734AF950E /* Pods_TikiTest.framework */,
+				196D22E06F23EDB725CFC992 /* Pods_TikiTestTests.framework */,
+				F7DA6C7F336E1FF14F2E3DBF /* Pods_TikiTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AA9CCDC219A6F1800A020FB /* Build configuration list for PBXNativeTarget "TikiTest" */;
 			buildPhases = (
+				3C45BA8F473B950C9BBE1979 /* [CP] Check Pods Manifest.lock */,
 				7AA9CCB0219A6F1700A020FB /* Sources */,
 				7AA9CCB1219A6F1700A020FB /* Frameworks */,
 				7AA9CCB2219A6F1700A020FB /* Resources */,
@@ -149,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AA9CCDF219A6F1800A020FB /* Build configuration list for PBXNativeTarget "TikiTestTests" */;
 			buildPhases = (
+				080829651FFD529685F2D7B6 /* [CP] Check Pods Manifest.lock */,
 				7AA9CCC4219A6F1800A020FB /* Sources */,
 				7AA9CCC5219A6F1800A020FB /* Frameworks */,
 				7AA9CCC6219A6F1800A020FB /* Resources */,
@@ -167,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AA9CCE2219A6F1800A020FB /* Build configuration list for PBXNativeTarget "TikiTestUITests" */;
 			buildPhases = (
+				69A6F1060617AE3DB36623BD /* [CP] Check Pods Manifest.lock */,
 				7AA9CCCF219A6F1800A020FB /* Sources */,
 				7AA9CCD0219A6F1800A020FB /* Frameworks */,
 				7AA9CCD1219A6F1800A020FB /* Resources */,
@@ -250,6 +293,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		080829651FFD529685F2D7B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikiTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C45BA8F473B950C9BBE1979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikiTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69A6F1060617AE3DB36623BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikiTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AA9CCB0219A6F1700A020FB /* Sources */ = {
@@ -428,15 +528,13 @@
 		};
 		7AA9CCDD219A6F1800A020FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B561E56FE9078478D9073094 /* Pods-TikiTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRRHGJLS4F;
 				INFOPLIST_FILE = TikiTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoTrungToan.TikiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,15 +544,13 @@
 		};
 		7AA9CCDE219A6F1800A020FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834D638BF0DE08928DE53572 /* Pods-TikiTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRRHGJLS4F;
 				INFOPLIST_FILE = TikiTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoTrungToan.TikiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -464,17 +560,14 @@
 		};
 		7AA9CCE0219A6F1800A020FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A06E456835C85B558CDDB41 /* Pods-TikiTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRRHGJLS4F;
 				INFOPLIST_FILE = TikiTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoTrungToan.TikiTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -485,17 +578,14 @@
 		};
 		7AA9CCE1219A6F1800A020FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E50FD37251988921447C8A /* Pods-TikiTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRRHGJLS4F;
 				INFOPLIST_FILE = TikiTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoTrungToan.TikiTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,16 +596,13 @@
 		};
 		7AA9CCE3219A6F1800A020FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0EBD513B287CFD1E748F951 /* Pods-TikiTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRRHGJLS4F;
 				INFOPLIST_FILE = TikiTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoTrungToan.TikiTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,16 +613,13 @@
 		};
 		7AA9CCE4219A6F1800A020FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B808D097B9485AA3F354EA /* Pods-TikiTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRRHGJLS4F;
 				INFOPLIST_FILE = TikiTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HoTrungToan.TikiTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
