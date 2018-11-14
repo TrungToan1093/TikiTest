@@ -18,7 +18,6 @@ final class MainViewModel {
     var productsFilter : Variable<[Product]> = Variable<[Product]>([])
     var firstProducts: [Product] = []
     
-    var history : Variable<[History]> = Variable<[History]>([])
     var realm: Realm!
     var histories : Results<History>?
     var historiesToken: NotificationToken?

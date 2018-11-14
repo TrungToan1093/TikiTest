@@ -18,7 +18,7 @@ class KeyworkCollectionViewCell: UICollectionViewCell {
     
     
     func configView(history: History) {
-        self.keyworkLabel.text = history.key
+        self.keyworkLabel.setTextWithTwoLine(text: history.key)
         self.keyworkLabel.layer.masksToBounds = true
         self.keyworkLabel.layer.cornerRadius = 5
         self.keyworkLabel.backgroundColor = UIColor.hexStringToUIColor(hex: history.hexStringColor)

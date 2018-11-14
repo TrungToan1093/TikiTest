@@ -13,16 +13,6 @@ class MainViewController: BaseViewController, HUDManager {
     
     //MARK: Properties
     let viewModel: MainViewModel
-    var maxHotKeyCVHeightConstraint: CGFloat = 0.0 {
-        didSet {
-            hotKeyCVHeightConstraint.constant = maxHotKeyCVHeightConstraint
-        }
-    }
-    var maxHeightKeywork: CGFloat = 1.0 {
-        didSet {
-            historyCVHeightConstraint.constant = maxHeightKeywork
-        }
-    }
     let fontLabel : UIFont = UIFont.systemFont(ofSize: 14.0)
     
     
@@ -71,20 +61,15 @@ class MainViewController: BaseViewController, HUDManager {
     private func prepareProductCVC() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 16
+        layout.minimumInteritemSpacing = 16
         hotKeyCollectionView.collectionViewLayout = layout
-        hotKeyCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
     private func prepareHistoryCVC() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 16
+        layout.minimumInteritemSpacing = 16
         historyCollectionView.collectionViewLayout = layout
-        
-        historyCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
     override func bind() {
@@ -102,24 +87,12 @@ class MainViewController: BaseViewController, HUDManager {
         
         viewModel.productsFilter.asObservable().skip(1).subscribe( onNext : { [weak self] newsList in
             guard let this = self else { return }
-            this.viewModel.productsFilter.value.forEach {
-                let height = Utility.heightForView(text: $0.keyword , font: this.fontLabel, width: 112) + 112
-                if(height > this.maxHotKeyCVHeightConstraint) {
-                    this.maxHotKeyCVHeightConstraint = height + 112
-                }
-            }
             this.hotKeyCollectionView.reloadData()
         }).disposed(by: self.rx.disposeBag)
         
         
         viewModel.historiesToken = viewModel.histories?.observe { [weak self]  _ in
             guard let this = self else { return }
-            this.viewModel.histories?.forEach {
-                let height = Utility.heightForView(text: $0.key , font: this.fontLabel, width: 112)
-                if(height > this.maxHeightKeywork) {
-                    this.maxHeightKeywork = height
-                }
-            }
             this.historyCollectionView.reloadData()
             self?.historyHeaderView.isHidden = this.viewModel.histories?.count == 0
             self?.historyCollectionView.isHidden = this.viewModel.histories?.count == 0
@@ -154,9 +127,11 @@ extension MainViewController: UICollectionViewDataSource {
 extension MainViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == self.hotKeyCollectionView {
-            return  CGSize(width: 112, height: maxHotKeyCVHeightConstraint)
+            let witdh = Utility.widthForViewWithTwoLines(text: viewModel.productsFilter.value[indexPath.row].keyword, font: fontLabel, height: 50)
+            return  CGSize(width: witdh > 112 ? witdh : 112, height: 176)
         }else {
-            return  CGSize(width: 112, height: maxHeightKeywork)
+            let witdh = Utility.widthForViewWithTwoLines(text: viewModel.histories![indexPath.row].key, font: fontLabel, height: 50)
+            return  CGSize(width: witdh > 112 ? witdh : 112, height: 100)
         }
     }
     

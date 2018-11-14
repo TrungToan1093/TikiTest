@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		34358CE6EA99640559A5548C /* Pods_TikiTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196D22E06F23EDB725CFC992 /* Pods_TikiTestTests.framework */; };
 		476EED16EC0EC4ECF080F1F9 /* Pods_TikiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16DA25B5E15A0E734AF950E /* Pods_TikiTest.framework */; };
+		7A62C989219C719E0077F72B /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62C988219C719E0077F72B /* PaddingLabel.swift */; };
+		7A62C98B219C7ED50077F72B /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62C98A219C7ED50077F72B /* String+Ext.swift */; };
+		7A62C98D219C7F230077F72B /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62C98C219C7F230077F72B /* UILabel+Ext.swift */; };
 		7AA0C82F219B256E00F80E82 /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA0C82E219B256E00F80E82 /* HUDManager.swift */; };
 		7AA9CCB8219A6F1700A020FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9CCB7219A6F1700A020FB /* AppDelegate.swift */; };
 		7AA9CCBF219A6F1800A020FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA9CCBE219A6F1800A020FB /* Assets.xcassets */; };
@@ -62,6 +65,9 @@
 		196D22E06F23EDB725CFC992 /* Pods_TikiTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikiTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E50FD37251988921447C8A /* Pods-TikiTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTestTests/Pods-TikiTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A06E456835C85B558CDDB41 /* Pods-TikiTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikiTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikiTestTests/Pods-TikiTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A62C988219C719E0077F72B /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		7A62C98A219C7ED50077F72B /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		7A62C98C219C7F230077F72B /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 		7AA0C82E219B256E00F80E82 /* HUDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
 		7AA9CCB4219A6F1700A020FB /* TikiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA9CCB7219A6F1700A020FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		7AA0C82D219B254C00F80E82 /* Shareds */ = {
 			isa = PBXGroup;
 			children = (
+				7A62C988219C719E0077F72B /* PaddingLabel.swift */,
 				7AA0C82E219B256E00F80E82 /* HUDManager.swift */,
 			);
 			path = Shareds;
@@ -254,6 +261,8 @@
 				7AA9CD0C219A8F6B00A020FB /* NSObjective+Ext.swift */,
 				7AA9CD14219A9A2800A020FB /* NSObject+Rx.swift */,
 				7AA9CD2E219B0E1000A020FB /* UIColor+Ext.swift */,
+				7A62C98A219C7ED50077F72B /* String+Ext.swift */,
+				7A62C98C219C7F230077F72B /* UILabel+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -602,6 +611,7 @@
 				7AA9CCF3219A784700A020FB /* Provider.swift in Sources */,
 				7AA9CD03219A815600A020FB /* MainAPIs.swift in Sources */,
 				7AA9CD13219A99BD00A020FB /* BaseViewController.swift in Sources */,
+				7A62C98B219C7ED50077F72B /* String+Ext.swift in Sources */,
 				7AA9CD01219A7F5400A020FB /* UIApplication+Ext.swift in Sources */,
 				7AA9CCF5219A792F00A020FB /* Networking.swift in Sources */,
 				7AA9CD10219A93A300A020FB /* MainViewController.swift in Sources */,
@@ -609,7 +619,9 @@
 				7AA0C82F219B256E00F80E82 /* HUDManager.swift in Sources */,
 				7AA9CCF7219A79F500A020FB /* AppAssembler.swift in Sources */,
 				7AA9CCFA219A7B4300A020FB /* Environment.swift in Sources */,
+				7A62C989219C719E0077F72B /* PaddingLabel.swift in Sources */,
 				7AA9CCED219A73AB00A020FB /* UIImageView+Ext.swift in Sources */,
+				7A62C98D219C7F230077F72B /* UILabel+Ext.swift in Sources */,
 				7AA9CD05219A81F700A020FB /* Products.swift in Sources */,
 				7AA9CCB8219A6F1700A020FB /* AppDelegate.swift in Sources */,
 				7AA9CD29219ADC5F00A020FB /* KeyworkCollectionViewCell.swift in Sources */,

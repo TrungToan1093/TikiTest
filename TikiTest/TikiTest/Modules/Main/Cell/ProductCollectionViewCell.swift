@@ -20,7 +20,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
 
     func configView(product: Product)  {
         self.productView.setImageWithURL(url: product.icon)
-        self.keyworkLabel.text = product.keyword
+        self.keyworkLabel.setTextWithTwoLine(text: product.keyword)
         self.keyworkLabel.layer.masksToBounds = true
         self.keyworkLabel.layer.cornerRadius = 5
         self.keyworkLabel.backgroundColor = UIColor.hexStringToUIColor(hex: product.hexStringColor!)

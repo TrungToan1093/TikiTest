@@ -22,7 +22,9 @@ extension UIImageView {
                     }
                     return
                 }
-                this.image = image
+                DispatchQueue.main.async {
+                    this.image = image
+                }
             })
         }
     }

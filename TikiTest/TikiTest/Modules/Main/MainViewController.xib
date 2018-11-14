@@ -30,7 +30,7 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uOJ-ov-qZZ">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="736"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="412"/>
                             <subviews>
                                 <searchBar contentMode="redraw" placeholder="Nhập từ khoá hot" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEj-a4-EoJ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -68,16 +68,16 @@
                                     </constraints>
                                 </view>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XE0-06-cOh">
-                                    <rect key="frame" x="0.0" y="96" width="375" height="500"/>
+                                    <rect key="frame" x="0.0" y="96" width="375" height="176"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="500" id="M1k-nd-uBb"/>
+                                        <constraint firstAttribute="height" constant="176" id="M1k-nd-uBb"/>
                                     </constraints>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l1p-0W-vqN">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                     <connections>
                                         <outlet property="dataSource" destination="-1" id="3Mt-na-KIg"/>
@@ -85,7 +85,7 @@
                                     </connections>
                                 </collectionView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSC-Wf-dxi" userLabel="History View">
-                                    <rect key="frame" x="0.0" y="596" width="375" height="40"/>
+                                    <rect key="frame" x="0.0" y="272" width="375" height="40"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tìm Kiếm Gần Đây" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeg-Xv-cTi">
                                             <rect key="frame" x="16" y="9.5" width="141" height="21"/>
@@ -116,7 +116,7 @@
                                     </constraints>
                                 </view>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-VO-fwJ">
-                                    <rect key="frame" x="0.0" y="636" width="375" height="100"/>
+                                    <rect key="frame" x="0.0" y="312" width="375" height="100"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="5Vq-tI-7Y8"/>
