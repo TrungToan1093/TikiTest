@@ -34,11 +34,18 @@ struct Utility {
     }
     
     static func wrapTwoLine(text: String) -> String{
-        var indexCenter = text.replaceNewlinesToWhitespaces.count / 2
+        let indexCenter = text.replaceNewlinesToWhitespaces.count / 2
+        var indexCenterTemp = indexCenter
         var textTemp = text.replaceNewlinesToWhitespaces
         if textTemp.contains(" ") {
-            while (textTemp[indexCenter] != " ")  {
-                indexCenter -= 1
+            while (indexCenterTemp != 1 && textTemp[indexCenterTemp] != " ")  {
+                indexCenterTemp -= 1
+            }
+            if indexCenterTemp == 1 {
+                indexCenterTemp = indexCenter
+                while textTemp[indexCenterTemp + 1] != " "{
+                    indexCenterTemp += 1
+                }
             }
             textTemp = text.replace(indexCenter, "\n")
         }
