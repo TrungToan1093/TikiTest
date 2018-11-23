@@ -8,6 +8,8 @@
 
 import UIKit
 import RealmSwift
+import Fabric
+import Crashlytics
 
 let appAssembler = AppAssembler()
 
@@ -19,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Fabric.with([Crashlytics.self])
         SyncManager.shared.logLevel = .off
 
         self.window = appAssembler.resolve()

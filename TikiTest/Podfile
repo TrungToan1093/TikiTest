@@ -12,6 +12,9 @@ def shared_pods
         pod 'RxSwift'
         
         pod 'RealmSwift'
+
+        pod 'Fabric'
+        pod 'Crashlytics'
 end
 
 target 'TikiTest' do
